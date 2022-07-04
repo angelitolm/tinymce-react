@@ -1,0 +1,237 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-family: Poppins, Helvetica, "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.wrapper-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.editor-class {
+    width: 960px;
+    border-radius: 1rem;
+    box-shadow: rgb(34 47 62 / 15%) 0px 1rem 1rem -0.625rem, rgb(34 47 62 / 15%) 0px 0px 2.5rem 1px;
+}
+
+.tox-tinymce {
+    width: 960px;
+    height: 100%;
+}
+.wrapper-switch {
+    margin: 1rem auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+}
+
+.footer {
+    width: 960px;
+    margin: 1rem auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mce-notification, .tox-notifications-container {display: none !important;}
+
+
+/** CSS for Content*/
+.demo-inline {
+    /*box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);*/
+    text-align: left;
+    color: #626262;
+    line-height: 1.3;
+    font-size: 14px;
+    background-color: #ffffff;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px 20px 20px 20px;
+}
+.demo-inline .container {
+    background-color: #fafafa;
+    margin: -20px -20px 0 -20px;
+    padding: 20px;
+}
+.demo-inline p {
+    margin: 0 0;
+}
+.demo-inline h1 {
+    color: #1976D2;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0;
+}
+.demo-inline h2 {
+    color: #1976D2;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 40px;
+}
+.demo-inline h3 {
+    font-size: 1.5em;
+    color: #403f42;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 40px;
+}
+.demo-inline ul,
+.demo-inline ol {
+    padding-left: 20px;
+}
+.demo-inline ul {
+    list-style: disc;
+}
+.demo-inline ol {
+    list-style: decimal;
+}
+.demo-inline a {
+    text-decoration: underline;
+}
+.demo-inline img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 10px 10px;
+}
+.demo-inline textarea {
+    display: none;
+}
+.demo-inline *[contentEditable="true"]:focus,
+.demo-inline *[contentEditable="true"]:hover {
+    outline: 2px solid #1976D2;
+}
+
+
+/** Toolbar */
+.engage-toolbar {
+    right: 0;
+    margin-right: -90px;
+    top: 30% !important;
+}
+
+.transform-90 {
+    transform: rotate(90deg);
+    /*transform-origin: left top;*/
+}
+
+.fw-bolder {
+    font-weight: 600 !important;
+}
+
+.px-5 {
+    padding-right: 1.25rem !important;
+    padding-left: 1.25rem !important;
+}
+
+.mt-20 {
+    margin-top: 5rem !important;
+}
+
+.gap-2 {
+    gap: 0.5rem !important;
+}
+
+.position-fixed {
+    position: fixed !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+
+/** Buttons */
+.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+    border: 0;
+    padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+}
+
+.btn.btn-color-gray-700 {
+    /*color: #92929F;*/
+    color: #fff;
+}
+
+.btn.btn-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn {
+    outline: none !important;
+}
+
+.rounded-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.bg-body {
+    background-color: #1E1E2D;
+}
+
+.bg-body {
+    background-color: rgba(30, 30, 45, 1) !important;
+}
+
+.fs-6 {
+    font-size: 1.075rem !important;
+}
+
+.px-4 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.h-35px {
+    height: 35px !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.1rem 1rem 0.25rem rgb(0 0 0 / 5%) !important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.475rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
